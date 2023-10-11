@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <script>
+        function reverseWords() {
+            const inputSentence = document.getElementById('inputSentence').value;
+            const words = inputSentence.split(' ');
+            const reversedWords = words.map(word => word.split('').reverse().join(''));
+            const reversedSentence = reversedWords.join(' ');
+            document.getElementById('outputReverse').innerText = reversedSentence;
+        }
+
+    
+    </script>
+</head>
+<body>
+
+<h2>Reverse Every Word in a Sentence:</h2>
+<label for="inputSentence">Enter a sentence:</label>
+<input type="text" id="inputSentence">
+<button onclick="reverseWords()">Reverse Words</button>
+<p id="outputReverse"></p>
+
+
+
+</body>
+</html>
